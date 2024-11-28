@@ -29,13 +29,9 @@
     />
   </head>
   <body>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-      
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none"></svg>
 
-    <div id="preloader" class="preloader-container">
-      
-    </div>
+    <div id="preloader" class="preloader-container"></div>
 
     <header id="header" class="site-header">
       <nav id="header-nav" class="navbar navbar-expand-lg py-3">
@@ -88,9 +84,7 @@
                 <li class="nav-item">
                   <a class="nav-link me-4 active" href="order.html">Order</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link me-4" href="index.html#blog">Blogs</a>
-                </li>
+
                 <li class="nav-item">
                   <a class="nav-link me-4" href="index.html#contact">Contact</a>
                 </li>
@@ -107,7 +101,7 @@
                         <use xlink:href="#user"></use>
                       </svg>
                     </a>
-                    
+
                     <div
                       class="modal fade"
                       id="exampleModal"
@@ -317,7 +311,7 @@
             </div>
           </div>
         </div>
-       
+
         <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
@@ -325,13 +319,27 @@
               <form>
                 <div class="mb-3">
                   <label for="customItem" class="form-label">Item Name</label>
-                  <input type="text" class="form-control" id="customItem" placeholder="Enter item name" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="customItem"
+                    placeholder="Enter item name"
+                  />
                 </div>
                 <div class="mb-3">
-                  <label for="customDescription" class="form-label">Description</label>
-                  <textarea class="form-control" id="customDescription" rows="3" placeholder="Enter item description"></textarea>
+                  <label for="customDescription" class="form-label"
+                    >Description</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="customDescription"
+                    rows="3"
+                    placeholder="Enter item description"
+                  ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button type="submit" class="btn btn-primary add-to-cart">
+                  Add to Cart
+                </button>
               </form>
             </div>
           </div>
@@ -339,22 +347,39 @@
       </div>
     </div>
 
-    
-    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="orderModal"
+      tabindex="-1"
+      aria-labelledby="orderModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="orderModalLabel">Order Form</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body">
             <form>
               <div class="mb-3">
                 <label for="customerName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="customerName" placeholder="Enter your name" />
+                <input
+                  type="text"
+                  class="form-control"
+                  id="customerName"
+                  placeholder="Enter your name"
+                />
               </div>
               <div class="mb-3">
-                <label for="paymentMethod" class="form-label">Mode of Payment</label>
+                <label for="paymentMethod" class="form-label"
+                  >Mode of Payment</label
+                >
                 <select class="form-select" id="paymentMethod">
                   <option selected>Choose...</option>
                   <option value="creditCard">Credit Card</option>
@@ -368,7 +393,9 @@
                   <!-- Items will be dynamically added here -->
                 </ul>
               </div>
-              <button type="submit" class="btn btn-primary place-order">Place Order</button>
+              <button type="submit" class="btn btn-primary place-order">
+                Place Order
+              </button>
             </form>
           </div>
         </div>
@@ -442,9 +469,7 @@
                     <li class="menu-item mb-1">
                       <a href="./order.html">Order</a>
                     </li>
-                    <li class="menu-item mb-1">
-                      <a href="#blog">Blogs</a>
-                    </li>
+
                     <li class="menu-item mb-1">
                       <a href="#contact">Contact</a>
                     </li>
